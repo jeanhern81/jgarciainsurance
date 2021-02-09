@@ -24,9 +24,9 @@ constructor(props) {
     title: 'Julio Garcia Insurance',
     headerLinks: [
       { title: 'Home', path: '/' },
-      { title: 'Auto', path: '/auto' },
-      { title: 'Home', path: '/home' },
-      { title: 'Life', path: '/life' },
+      { title: 'Auto', path: '/autoins' },
+      { title: 'Home', path: '/homeins' },
+      { title: 'Life', path: '/lifeins' },
       { title: 'CommercialInsurance', path: '/' },
       { title: 'PetInsurance', path: '/' },
       { title: 'CompaniesWeRepresent', path: '/' },

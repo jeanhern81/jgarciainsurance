@@ -15,7 +15,7 @@ function TopAlert() {
         <Alert variant="clear" >
           <Row>          
           <Col>          
-          <img src={JulioNameLogo} style={{width: 300 }}  alt='Julio Garica Insurance'/>
+          <a href="./home"><img src={JulioNameLogo} style={{width: 300 }}  alt='Julio Garcia Insurance'/></a>
           <div className=' d-flex justify-content-end' lg={12} style={{float: 'right'}}>
 <Button variant="info" size="sm" lg={12}>Contact Us!</Button>{' '} 
 </div>

@@ -1,52 +1,52 @@
 import React from 'react';
-import Container from 'react-bootstrap/Row';
+import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'
 import Navbar from 'react-bootstrap/Navbar';
+import './Footer.css';
 import { BiCopyright } from 'react-icons/bi';
 
 function Footer () {
     return (
 
-        
-        <footer className='mt-5 d-flex justify-content-center'>
+<Container fluid={true}>
+<Navbar fixed="bottom ">
 
 
-
-
-            <Container fluid={true}>
-                <Navbar fixed="bottom" className='mt-5 d-flex justify-content-center'>
-            <div className='quickLinks'>
-                <p>Quick Links</p>
-                <li>Auto Quote Request</li>
-                <li>Home Quote Request</li>
-                <li>Commercial Insurance Request</li>
-
-
+<Row className='d-flex p-2 flex-fill bd-highlight border-top  p-3'>
+    <Col xs={12} lg={6}>
+    <div className='quickLinksp text-center' >
+            <p>Quick Links</p>
+            <li>Auto Quote Request</li>
+            <li>Home Quote Request</li>
+            <li>Commercial Quote Request</li>
             </div>
+    </Col>
 
 
-                <Row className='border-top p-3' >
-                    <Col className='p-0 ' lg={12}>
-                        <h6 className='d-flex justify-content-center '><p><BiCopyright /> Julio Garcia Insurance</p></h6>
-                    </Col>
-                    <Col className='d-flex justify-content-center p-0' lg={12}>
-                        <p>All content on this website is owned by Julio Garcia and our licensors. Do not use without our consent. </p>
-                    </Col>
-                    <Col className='d-flex justify-content-center p-0' lg={12}>
-                        <p>Website createdy by The Web Dev Studio. All rights reserved.</p>
-                    </Col>
-                </Row>
+    <Col xs={12} lg={6} className="p-2"> 
+    <div className='addlInfo text-center ' >
+        <p>Contact Us</p>
+        <p>Privacy Policy</p>
+        <p>Translate this page:</p>
+        </div>
+    </Col>
 
-            <div className='addlInfo'>
-                <p>Contact Us</p>
-                <p>Privacy Policy</p>
-            </div>
 
-                </Navbar>
-            </Container>
-        </footer>
-    );
+    <Col xs={12} lg={12}>
+        <div className='jGarciaBottom p-2 flex-fill bd-highlight' >
+        <h6 className=' d-flex justify-content-center'>
+        <p><BiCopyright /> Julio Garcia Insurance</p></h6>
+        <p className='d-flex justify-content-center'>All content on this website is owned by Julio Garcia and our licensors. Do not use without our consent. </p>
+        <p className='d-flex justify-content-center '>Website createdy by The Web Dev Studio. All rights reserved.</p>
+        </div>
+    </Col>
+</Row>
+
+</Navbar>
+</Container>
+    
+);
 }
 
 
