@@ -6,7 +6,7 @@ import Container from 'react-bootstrap/Container';
 import { Navbar, NavDropdown, Form, Button, FormControl, Nav, } from 'react-bootstrap';
 
 //Pages
-import HomePage from './pages/HomePage';
+import HomePage from './pages/LandingPage';
 import AutoIns from './pages/AutoIns';
 import HomeIns from './pages/HomeIns';
 import LifeIns from './pages/LifeIns';
@@ -23,7 +23,7 @@ constructor(props) {
   this.state = {
     title: 'Julio Garcia Insurance',
     headerLinks: [
-      { title: 'Home', path: '/' },
+      { title: 'Home', path: '/landingpage' },
       { title: 'Auto', path: '/autoins' },
       { title: 'Home', path: '/homeins' },
       { title: 'Life', path: '/lifeins' },
@@ -76,12 +76,12 @@ render () {
     < TopAlert />
 
   <Navbar bg="light" expand="lg">
-  <Navbar.Brand href="#home"></Navbar.Brand>
+  <Navbar.Brand href="/landingpage"></Navbar.Brand>
 
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
-      <Nav.Link href="#home">Home</Nav.Link>
+      <Nav.Link href="./pages/LandingPage">Home</Nav.Link>
 
       <NavDropdown title="Personal Insurance" id="basic-nav-dropdown">
         <NavDropdown.Item href="./pages/AutoIns">Auto Insurance</NavDropdown.Item>
